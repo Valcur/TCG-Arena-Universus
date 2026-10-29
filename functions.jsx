@@ -24,3 +24,9 @@ async function onPlayersReady() {
     await functions.changeCounterValue(0, game.data.Manager.vitality)
     await functions.draw(game.data.Manager.handSize)
 }
+
+async function onNewTurn() {
+    if (!game.turn.isMyTurn) return
+    const currentHandSize = game.Hands?.length
+    await functions.draw(game.data.Manager.handSize - currentHandSize)
+}
