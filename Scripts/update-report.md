@@ -1,4 +1,4 @@
-# Mise à jour des cartes UniVersus — 2026-10-28 17:55 UTC
+# Mise à jour des cartes UniVersus — 2026-10-29 18:10 UTC
 
 | | |
 |---|---|
@@ -10,9 +10,9 @@
 | Versos trouvés (cartes recto-verso) | 47 / 51 |
 | Images uvsgames.com non utilisées | 161 |
 | Cartes de type Special retirées | 0 |
-| Cartes dans UniversusCards.json | 4890 (avant : 0) |
+| Cartes dans UniversusCards.json | 4890 (avant : 4890) |
 | Noms différents (cartes jouables) | 3769 |
-| Nouvelles cartes | 4890 |
+| Nouvelles cartes | 0 |
 | Cartes disparues (conservées) | 0 |
 | ❌ Erreurs | 1 |
 | ⚠️ Avertissements | 20 |

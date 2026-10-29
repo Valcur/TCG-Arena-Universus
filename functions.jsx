@@ -25,9 +25,15 @@ async function onPlayersReady() {
     await functions.draw(game.data.Manager.handSize)
 }
 
+/*
+On their first turn only, the second player
+may draw 1 additional card during the
+Draw Step. This means the second player
+will draw above their starting hand size.
+*/
 async function onNewTurn() {
     if (!game.turn.isMyTurn) return
-    const currentHandSize = cards.Hands?.length ?? 0
+    const currentHandSize = cards.Hand?.length ?? 0
     const cardsToDraw = Math.max(0, game.data.Manager.handSize - currentHandSize)
     await functions.draw(cardsToDraw)
 }
