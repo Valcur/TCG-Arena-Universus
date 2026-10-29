@@ -27,7 +27,7 @@ async function onPlayersReady() {
 
 async function onNewTurn() {
     if (!game.turn.isMyTurn) return
-    const currentHandSize = game.Hands?.length ?? 0
+    const currentHandSize = cards.Hands?.length ?? 0
     const cardsToDraw = Math.max(0, game.data.Manager.handSize - currentHandSize)
     await functions.draw(cardsToDraw)
 }
