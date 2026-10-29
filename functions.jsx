@@ -8,6 +8,7 @@ async function check() {
     
     const checkValue = topCardData?.check ?? 0
     game.data.Manager.checkValue = checkValue
+    game.data.Manager.checkKey++
     functions.chatLog("Checked a value of " + checkValue)
 
     await functions.draw(1, false, "Discard")
