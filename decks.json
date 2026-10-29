@@ -1,0 +1,222 @@
+[
+    {
+      "title": "Heroes of Exandria – Percy Starter Deck",
+      "id": "Heroes of Exandria – Percy Starter Deck",
+      "cardCount": 61,
+      "createdAt": "2026-10-29T17:29:02.522Z",
+      "lastModifiedAt": "2026-10-29T17:29:02.522Z",
+      "game": "Universus",
+      "format": [
+        "Classic"
+      ],
+      "deckList": {
+        "categoriesOrder": [
+          "Character",
+          "Foundation",
+          "Backup",
+          "Attack",
+          "Asset"
+        ],
+        "Character": [
+          {
+            "count": 1,
+            "id": "CR01-013"
+          }
+        ],
+        "Foundation": [
+          {
+            "count": 4,
+            "id": "CR01-035"
+          },
+          {
+            "count": 4,
+            "id": "CR01-128"
+          },
+          {
+            "count": 4,
+            "id": "CR01-127"
+          },
+          {
+            "count": 4,
+            "id": "CR01-032"
+          },
+          {
+            "count": 4,
+            "id": "CR01-031"
+          },
+          {
+            "count": 4,
+            "id": "CR01-030"
+          },
+          {
+            "count": 2,
+            "id": "CR01-125"
+          },
+          {
+            "count": 4,
+            "id": "CR01-058"
+          },
+          {
+            "count": 2,
+            "id": "RF01-035-P"
+          }
+        ],
+        "Backup": [
+          {
+            "count": 2,
+            "id": "CR01-172"
+          }
+        ],
+        "Attack": [
+          {
+            "count": 4,
+            "id": "CR01-028"
+          },
+          {
+            "count": 4,
+            "id": "CR01-026"
+          },
+          {
+            "count": 2,
+            "id": "CR01-053"
+          },
+          {
+            "count": 3,
+            "id": "CR01-116"
+          },
+          {
+            "count": 3,
+            "id": "CR01-024"
+          },
+          {
+            "count": 3,
+            "id": "CR01-022"
+          },
+          {
+            "count": 2,
+            "id": "CR01-023"
+          }
+        ],
+        "Asset": [
+          {
+            "count": 3,
+            "id": "CR01-021"
+          },
+          {
+            "count": 2,
+            "id": "CR01-164"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Heroes of Exandria: Beau Starter Deck",
+      "id": "Heroes of Exandria: Beau Starter Deck",
+      "cardCount": 61,
+      "createdAt": "2026-10-29T17:32:31.464Z",
+      "lastModifiedAt": "2026-10-29T17:33:23.784Z",
+      "game": "Universus",
+      "format": [
+        "Classic"
+      ],
+      "deckList": {
+        "categoriesOrder": [
+          "Character",
+          "Foundation",
+          "Backup",
+          "Attack",
+          "Asset"
+        ],
+        "Character": [
+          {
+            "count": 1,
+            "id": "CR01-001-2"
+          }
+        ],
+        "Foundation": [
+          {
+            "count": 4,
+            "id": "CR01-078"
+          },
+          {
+            "count": 3,
+            "id": "CR01-161"
+          },
+          {
+            "count": 3,
+            "id": "CR01-094"
+          },
+          {
+            "count": 4,
+            "id": "CR01-092"
+          },
+          {
+            "count": 4,
+            "id": "CR01-157"
+          },
+          {
+            "count": 4,
+            "id": "CR01-156"
+          },
+          {
+            "count": 4,
+            "id": "CR01-091"
+          },
+          {
+            "count": 3,
+            "id": "CR01-155"
+          },
+          {
+            "count": 4,
+            "id": "CR01-154"
+          },
+          {
+            "count": 2,
+            "id": "CR01-158"
+          }
+        ],
+        "Backup": [
+          {
+            "count": 2,
+            "id": "CR01-173"
+          }
+        ],
+        "Attack": [
+          {
+            "count": 3,
+            "id": "CR01-087"
+          },
+          {
+            "count": 4,
+            "id": "CR01-152"
+          },
+          {
+            "count": 2,
+            "id": "CR01-072"
+          },
+          {
+            "count": 4,
+            "id": "CR01-148"
+          },
+          {
+            "count": 2,
+            "id": "CR01-085"
+          },
+          {
+            "count": 4,
+            "id": "CR01-084"
+          },
+          {
+            "count": 2,
+            "id": "CR01-151"
+          }
+        ],
+        "Asset": [
+          {
+            "count": 2,
+            "id": "CR01-164"
+          }
+        ]
+      }
+    }
+]
