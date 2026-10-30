@@ -22,7 +22,6 @@ async function onPlayersReady() {
     game.data.Manager.vitality = characterCardData.vitality ?? 0
 
     await functions.changeCounterValue(0, game.data.Manager.vitality)
-    //await functions.draw(game.data.Manager.handSize)
 }
 
 /*
@@ -35,6 +34,9 @@ async function onNewTurn() {
     if (!game.turn.isMyTurn) return
     if (game.turn.count <= 1) return
     const currentHandSize = cards.Hand?.length ?? 0
-    const cardsToDraw = Math.max(0, game.data.Manager.handSize - currentHandSize)
+    let cardsToDraw = Math.max(0, game.data.Manager.handSize - currentHandSize)
+    if (game.turn.count === 2 && game.turn.totalPlayers === 2) {
+        cardsToDraw += 1
+    }
     await functions.draw(cardsToDraw)
 }
