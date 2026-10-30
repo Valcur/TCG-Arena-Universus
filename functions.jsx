@@ -38,6 +38,5 @@ async function onNewTurn() {
     if (game.turn.count === 2 && game.turn.totalPlayers === 2) {
         cardsToDraw += 1
     }
-    console.log("DRAW")
     await functions.draw(cardsToDraw)
 }
