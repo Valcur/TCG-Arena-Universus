@@ -1,0 +1,324 @@
+{
+    "name": "Universus",
+    "menuBackgroundImage": "https://valcur.github.io/TCG-Arena-Universus/Images/banner.jpeg",
+    "deckBuilding": {
+        "mainFilters": [
+            "type",
+            "rarity",
+            "set",
+            "cost",
+            "check"
+        ],
+        "formats": [
+            {
+                "title": "Classic",
+                "gameplay": "Classic",
+                "deckRuleset": "Classic"
+            }
+        ],
+        "deckRulesets": {
+            "Classic": {
+                "general": {
+                    "min": 61,
+                    "maxPerCard": 4
+                },
+                "categories": [
+                    {
+                        "category": "Character",
+                        "min": 1,
+                        "max": 1
+                    }
+                ]
+            }
+        }
+    },
+    "gameplay": {
+        "Classic": {
+            "beforeGameStart": {
+
+            },
+            "mulligan": {
+                "default": {
+                    "startingHandSize": "game.data.Manager.handSize",
+                    "triggeredByButton": true,
+                    "mulliganCount": {
+                        "min": 0,
+                        "max": 2
+                    },
+                    "mulliganCycle": {
+                        "info": "Put back your hand bottom of your deck and draw again. You can reveal and mulligan again if your hand has no Foundation cards.",
+                        "steps": [
+                            ["toBottom", "draw"],
+                            ["reveal", "toBottom", "draw"]
+                        ],
+                        "selectionRange": {
+                            "min": 999
+                        }
+                    },
+                    "postMulligan": {
+                        "minMulligansToTrigger": 1,
+                        "mulliganCount": {
+                            "max": 0
+                        },
+                        "info": "",
+                        "steps": ["shuffle"]
+                    }
+                },
+                "2": {
+                    "startingHandSize": "game.data.Manager.handSize",
+                    "triggeredByButton": true,
+                    "mulliganCount": {
+                        "min": 0,
+                        "max": 1
+                    },
+                    "mulliganCycle": {
+                        "info": "Put back any number of cards to the bottom of your deck and draw again.",
+                        "selectionRange": {
+                            "min": 0
+                        },
+                        "steps": [
+                            ["toBottom", "draw", "shuffle"]
+                        ]
+                    }
+                }
+            },
+            "newTurn": {
+                "drawOnStart": false,
+                "drawPerTurn": 0
+            },
+            "tokens": [],
+            "draggableTokens": [],
+            "countersStartingValues": [0],
+            "sections": {
+                "layout": {
+                    "direction": "column",
+                    "style": {
+                        "marginTop": "-1.5vh",
+                        "--column-width": "18vh",
+                        "--creature-width": "20vh",
+                        "--building--width": "13vh",
+                        "--cardpool-font-weight": "1000",
+                        "marginRight": "-1vh",
+                        "alignItems": "center"
+                    },
+                    "content": [
+                        {
+                            "section": "Manager",
+                            "style": {
+                                "width": "96vh"
+                            }
+                        },
+                        {
+                            "section": "Cardpool",
+                            "style": {
+                                "width": "96vh",
+                                "marginTop": "-0.5vh"
+                            }
+                        },
+                        {
+                            "direction": "row",
+                            "content": [
+                                {
+                                    "section": "Momentum",
+                                    "style": {
+                                        "width": "15vh"
+                                    }
+                                },
+                                {
+                                    "section": "Character",
+                                    "style": {
+                                        "width": "13vh"
+                                    }
+                                },
+                                {
+                                    "section": "Stage",
+                                    "style": {
+                                        "marginRight": "4vh"
+                                    }
+                                },
+                                {
+                                    "section": "Buttons"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "categoriesAlreadyOnBoard": [
+                    "Character"
+                ],
+                "autoPlayFromHand": {
+                    "Action": "Cardpool",
+                    "Asset": "Cardpool",
+                    "Attack": "Cardpool",
+                    "Backup": "Cardpool",
+                    "Boss": "Cardpool",
+                    "Character": "Character",
+                    "Foundation": "Cardpool",
+                    "Arena": "Cardpool"
+                },
+                "autoPlayFromStack": {
+                    "Action": "Cardpool",
+                    "Asset": "Cardpool",
+                    "Attack": "Cardpool",
+                    "Backup": "Cardpool",
+                    "Boss": "Cardpool",
+                    "Character": "Character",
+                    "Foundation": "Cardpool",
+                    "Arena": "Cardpool"
+                },
+                "sectionsDict": {
+                    "Cardpool": {
+                        "isHidden": "no",
+                        "height": 19,
+                        "alignment": "START",
+                        "opponentAlignment": "START",
+                        "isHorizontalAllowed": false,
+                        "displayedTitle": "Cardpool"
+                    },
+                    "Momentum": {
+                        "isHidden": "yes",
+                        "height": 13,
+                        "alignment": "END",
+                        "isHorizontalAllowed": false,
+                        "displayedTitle": "Momentum",
+                        "noQuickActions": true
+                    },
+                    "Stage": {
+                        "isHidden": "no",
+                        "height": 16,
+                        "alignment": "CENTER",
+                        "isHorizontalAllowed": false,
+                        "displayedTitle": "Stage"
+                    },
+                    "Character": {
+                        "isHidden": "no",
+                        "height": 16,
+                        "alignment": "CENTER",
+                        "isHorizontalAllowed": false,
+                        "displayedTitle": "Character",
+                        "noQuickActions": true
+                    },
+                    "Manager": {
+                        "type": "custom",
+                        "defaultValue": {
+                            "checkValue": 0,
+                            "checkKey": 0,
+                            "vitality": 0,
+                            "handSize": 0
+                        },
+                        "blueprint": {
+                            "type": "div",
+                            "props": {
+                                "className": "position-relative d-flex justify-content-around",
+                                "style": {
+                                    "fontWeight": "1000",
+                                    "fontSize": "2vh",
+                                    "color": "#FF6A00",
+                                    "-webkit-text-stroke": "0.2vh black",
+                                    "paintOrder": "stroke fill",
+                                    "textShadow": "-0.1vh 0.25vh 1px #000000c1"
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "span",
+                                    "children": "+0"
+                                },
+                                {
+                                    "type": "span",
+                                    "children": "+1"
+                                },
+                                {
+                                    "type": "span",
+                                    "children": "+2"
+                                },
+                                {
+                                    "type": "span",
+                                    "children": "+3"
+                                },
+                                {
+                                    "type": "span",
+                                    "children": "+4"
+                                },
+                                {
+                                    "type": "span",
+                                    "children": "+5"
+                                },
+                                {
+                                    "type": "span",
+                                    "children": "+6"
+                                }
+                            ]
+                        },
+                        "events": {
+                            "onPlayersSideboardClosed": "await onPlayersReady()",
+                            "onNewTurn": "await onNewTurn()"
+                        }
+                    },
+                    "Buttons": {
+                        "type": "custom",
+                        "defaultValue": {
+                        },
+                        "blueprint": {
+                            "type": "div",
+                            "props": {
+                                "className": "d-flex flex-column gap-2 align-items-center justify-content-center",
+                                "style": {
+                                    "width": "9vh",
+                                    "height": "16vh"
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "button",
+                                    "props": {
+                                        "className": "player-only"
+                                    },
+                                    "onClick": "await check()",
+                                    "children": "Check"
+                                },
+                                {
+                                    "type": "div",
+                                    "props": {
+                                        "className": "pop-in",
+                                        "key": "{{ game.data.Manager.checkKey }}",
+                                        "style": {
+                                            "fontWeight": 1000,
+                                            "fontSize": "5vh",
+                                            "color": "#FF6A00",
+                                            "-webkit-text-stroke": "0.2vh black",
+                                            "paintOrder": "stroke fill",
+                                            "textShadow": "-0.1vh 0.25vh 1px #000000c1"
+                                        }
+                                    },
+                                    "children": "{{ game.data.Manager.checkValue }}"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "defaultRessources": {
+        "backgrounds": [
+            "https://valcur.github.io/TCG-Arena-Universus/Images/playmat1.jpg",
+            "https://valcur.github.io/TCG-Arena-Universus/Images/playmat2.jpg",
+            "https://valcur.github.io/TCG-Arena-Universus/Images/playmat3.jpg",
+            "https://valcur.github.io/TCG-Arena-Universus/Images/playmat4.jpg",
+            "https://valcur.github.io/TCG-Arena-Universus/Images/playmat5.jpg",
+            "https://valcur.github.io/TCG-Arena-Universus/Images/playmat6.jpg",
+            "https://valcur.github.io/TCG-Arena-Universus/Images/playmat7.jpg"
+        ],
+        "decksUrl": "https://valcur.github.io/TCG-Arena-Universus/decks.json"
+    },
+    "customHelp": "",
+    "cards": {
+        "dataUrl": "https://valcur.github.io/TCG-Arena-Universus/UniversusCards.json",
+        "cardBack": "https://valcur.github.io/TCG-Arena-Universus/Images/cardBack.jpg",
+        "cardBackColor": "#2E3E77"
+    },
+    "scriptsUrls": [
+        "https://valcur.github.io/TCG-Arena-Universus/functions.jsx"
+    ]
+}

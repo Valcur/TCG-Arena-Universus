@@ -1,0 +1,16 @@
+{
+    "author": "PiouPiou",
+    "gameUrl": "https://valcur.github.io/TCG-Arena-Universus/game.json",
+    "tags": "",
+    "langs": [
+        "en"
+    ],
+    "useAiArts": false,
+    "screenshotUrls": [
+        "https://valcur.github.io/TCG-Arena-Universus/Workshop/screenshot1.jpg"
+    ],
+    "descriptionUrl": "https://valcur.github.io/TCG-Arena-Universus/Workshop/description.md",
+    "updates": [
+        "First release!"
+    ]
+}
