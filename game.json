@@ -57,6 +57,9 @@
                     },
                     "postMulligan": {
                         "minMulligansToTrigger": 1,
+                        "selectionRange": {
+                            "max": 0
+                        },
                         "mulliganCount": {
                             "max": 0
                         },
