@@ -9,7 +9,9 @@ async function check() {
     const checkValue = topCardData?.check ?? 0
     game.data.Manager.checkValue = checkValue
     game.data.Manager.checkKey++
-    functions.chatLog("Checked {{card}} with a value of " + checkValue, { card: topCard })
+    const logCard = structuredClone(topCard)
+    logCard.hiddenTo = {}
+    functions.chatLog("Checked {{card}} with a value of " + checkValue, { card: logCard })
 
     await functions.draw(1, false, "Discard")
 }
